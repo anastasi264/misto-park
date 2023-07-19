@@ -1,0 +1,47 @@
+.burger-menu {
+  @apply fixed w-screen h-screen top-[93px];
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
+
+  &__blur {
+    @apply absolute top-0 left-0 right-0 h-screen flex justify-start z-50;
+  }
+
+  &__content {
+    background: #e6e4e4;
+
+    @apply fixed w-screen h-screen -translate-x-[100vw] duration-1000;
+    @apply h-full w-[30vw] px-5 flex flex-col gap-5 z-[100];
+    @apply md:w-[50vw] sm:w-screen sm:items-center;
+  }
+
+  &__title {
+    @apply font-bold;
+  }
+
+  &__nav {
+  }
+
+  &__list {
+    @apply flex flex-col gap-3;
+  }
+
+  &__item {
+    @apply flex items-center gap-2;
+    @apply sm:justify-center;
+
+  }
+
+  &__link {
+  }
+
+  &__icon {
+    @apply text-2xl;
+  }
+}
+
+.active {
+  @apply translate-x-0;
+}
