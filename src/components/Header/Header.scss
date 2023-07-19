@@ -1,0 +1,47 @@
+@import './../../styles/variables.scss';
+
+.header {
+  background: $beige;
+  @apply sticky top-0 py-5 gap-x-5 z-50;
+  @apply xl:py-2;
+  
+  &__container {
+    @apply flex justify-between items-center;
+  }
+
+  &__burger {
+    color: $dark-teal;
+    @apply hidden text-4xl;
+    @apply md:block;
+  }
+
+  &__logo {
+    @apply max-w-[120px];
+    @apply lg:max-w-[90px];
+  }
+
+  &__nav {
+    @apply md:hidden;
+  }
+
+  &__list {
+    @apply flex gap-12;
+    @apply lg:gap-4;
+  }
+
+  &__link {
+  }
+
+  &__donate-text {
+    background-color: $teal;
+    color: $white;
+
+    @apply block py-3 px-5 text-sm rounded-lg;
+    @apply xl:p-2 xl:px-3 md:hidden;
+  }
+
+  &__donate-icon {
+    @apply hidden w-[40px];
+    @apply md:block;
+  }
+}

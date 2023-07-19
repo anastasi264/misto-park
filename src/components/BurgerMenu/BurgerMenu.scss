@@ -1,5 +1,7 @@
+@import './../../styles/variables.scss';
+
 .burger-menu {
-  @apply fixed w-screen h-screen top-[93px];
+  @apply fixed w-screen h-screen top-[80px];
 
   @media (min-width: 1025px) {
     display: none;
@@ -10,31 +12,26 @@
   }
 
   &__content {
-    background: #e6e4e4;
+    background: $dark-teal;
+    color: $beige;
 
     @apply fixed w-screen h-screen -translate-x-[100vw] duration-1000;
-    @apply h-full w-[30vw] px-5 flex flex-col gap-5 z-[100];
+    @apply h-full w-[30vw] px-[20px] py-8 flex flex-col gap-8 z-[100];
     @apply md:w-[50vw] sm:w-screen sm:items-center;
   }
 
   &__title {
-    @apply font-bold;
-  }
-
-  &__nav {
+    @apply font-bold text-2xl;
   }
 
   &__list {
-    @apply flex flex-col gap-3;
+    @apply flex flex-col gap-8;
   }
 
   &__item {
     @apply flex items-center gap-2;
     @apply sm:justify-center;
 
-  }
-
-  &__link {
   }
 
   &__icon {
